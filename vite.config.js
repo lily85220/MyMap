@@ -7,8 +7,8 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/MyMap/' : '/',
   build: {
     rollupOptions: {
-      entryFileNames: '[name].js',
-      chunkFileNames: '[name].js'
+      entryFileNames: 'mapViewDeps.js',
+      chunkFileNames: 'mapViewDeps.js'
     }
   }
 })
